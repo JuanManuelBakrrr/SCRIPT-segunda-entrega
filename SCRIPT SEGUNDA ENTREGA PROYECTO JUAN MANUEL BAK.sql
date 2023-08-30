@@ -234,7 +234,7 @@ insert into inscripcion values (5050,555,40929875,5,null,'1cte');
 
 
 
--- facultades
+-- creacion de vista con la tabla 'FACULTADES' donde la utilizacion de la misma se crea para buscar rapidamente el nombre de cada faculta.
 
 
 
@@ -246,6 +246,7 @@ SELECT * FROM facultad;
 
 
 -- nombre y email de las facultades
+-- creacion de la vista FACULTAD_NOMBRE_MAILL , con la tabla facultad, donde se utiliza para la busqueda de los nombres , emails, de las facultades.
 
 
 
@@ -257,7 +258,7 @@ CREATE VIEW facultades_NOMBRE_MAIL AS
 
 
 
--- nombre estudiante
+-- creacion de la vista NOMBRE_ESTUDIANTE donde se puede adquirir el nombre de cada estudiante inscripto ala facultad correspondiente.
 
 
 
@@ -271,6 +272,7 @@ CREATE VIEW nombre_estudiante AS
 
 
 -- creacion de funcion para insertar valores
+-- utilizacion de la tabla 'iscripciones'
 
 
 
@@ -319,7 +321,8 @@ SELECT insertar_inscripcion(1, 123, 456, 789, '2023-08-15', 'primer cuatrimestre
 
 
 
--- store procedure de ordenamiento
+-- STORE PROCEDURE DE ORDENAMIENTO
+-- UTILIZACION DE LA TABLA 'ESTIDIANTE'
 
 
 
@@ -351,7 +354,8 @@ CALL sp_nombres_estudiantes('nombre');
 
 
 
--- sp que traiga los nombres de los estudiantes
+-- STORE PROCEDURE QUE TRAIGA EL NOMBRE DE LOS ESTUDIANTES.
+-- TABLA UTILIZADA 'ESTUDIANTE'
 
 
 
@@ -370,7 +374,7 @@ call sp_estudiantes_nombres();
 
 
 
--- creacion de trigger inserscion de registros nota 'numerica'---
+-- CREACION DE TRIGGER INSERCION DE REGISTROS NOTA NUMERICA---
 
 
 
